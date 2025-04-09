@@ -52,13 +52,13 @@
   - type: Flammable
     fireStackIncreaseMultiplier: 2.00
   - type: Sprite
-    scale: 0.5, 0.5
+    scale: 0.6, 0.6
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.23
+          radius: 0.28
         density: 70
         restitution: 0.0
         mask:

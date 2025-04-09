@@ -1,0 +1,43 @@
+﻿- type: body
+  id: Plushie
+  name: "plushie"
+  root: torso
+  slots:
+    head:
+      part: HeadPlushie
+      connections:
+      - torso
+      organs:
+        eyes: OrganPlushieEyes
+    torso:
+      part: TorsoPlushie
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head # Shitmed
+    right arm:
+      part: RightArmPlushie
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmPlushie
+      connections:
+      - left hand
+    right hand:
+      part: RightHandPlushie
+    left hand:
+      part: LeftHandPlushie
+    right leg:
+      part: RightLegPlushie
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegPlushie
+      connections:
+      - left foot
+    right foot:
+      part: RightFootPlushie
+    left foot:
+      part: LeftFootPlushie

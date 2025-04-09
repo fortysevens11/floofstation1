@@ -1,0 +1,112 @@
+# TODO: Add descriptions (many)
+# TODO BODY: Part damage
+- type: entity
+  id: PartPlushie
+  parent: [BaseItem, BasePart]
+  name: "plushie body part"
+  abstract: true
+  components:
+  - type: Damageable
+    damageContainer: Inorganic # Shitmed Change
+  - type: BodyPart
+  - type: Gibbable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 70
+      behaviors:
+      - !type:GibPartBehavior { }
+  - type: StaticPrice
+    price: 20
+
+- type: entity
+  id: TorsoPlushie
+  name: "plushie torso"
+  parent: [PartPlushie, BaseTorso]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Plushie/parts.rsi
+    state: "torso_m"
+
+- type: entity
+  id: HeadPlushie
+  name: "plushie head"
+  parent: [PartPlushie, BaseHead]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Plushie/parts.rsi
+    state: "head_m"
+
+- type: entity
+  id: LeftArmPlushie
+  name: "left plushie arm"
+  parent: [PartPlushie, BaseLeftArm]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Plushie/parts.rsi
+    state: "l_arm"
+
+- type: entity
+  id: RightArmPlushie
+  name: "right plushie arm"
+  parent: [PartPlushie, BaseRightArm]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Plushie/parts.rsi
+    state: "r_arm"
+
+- type: entity
+  id: LeftHandPlushie
+  name: "left plushie hand"
+  parent: [PartPlushie, BaseLeftHand]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Plushie/parts.rsi
+    state: "l_hand"
+
+- type: entity
+  id: RightHandPlushie
+  name: "right plushie hand"
+  parent: [PartPlushie, BaseRightHand]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Plushie/parts.rsi
+    state: "r_hand"
+
+- type: entity
+  id: LeftLegPlushie
+  name: "left plushie leg"
+  parent: [PartPlushie, BaseLeftLeg]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Plushie/parts.rsi
+    state: "l_leg"
+
+- type: entity
+  id: RightLegPlushie
+  name: "right plushie leg"
+  parent: [PartPlushie, BaseRightLeg]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Plushie/parts.rsi
+    state: "r_leg"
+
+- type: entity
+  id: LeftFootPlushie
+  name: "left plushie foot"
+  parent: [PartPlushie, BaseLeftFoot]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Plushie/parts.rsi
+    state: "l_foot"
+
+- type: entity
+  id: RightFootPlushie
+  name: "right plushie foot"
+  parent: [PartPlushie, BaseRightFoot]
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Plushie/parts.rsi
+    state: "r_foot"
