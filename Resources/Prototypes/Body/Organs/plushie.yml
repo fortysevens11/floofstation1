@@ -19,7 +19,7 @@
 
 - type: entity
   id: OrganPlushieEyes
-  parent: BaseIPCOrgan
+  parent: BasePlushieOrgan
   name: button eyes
   description: "They get the job done. Somehow."
   components:
