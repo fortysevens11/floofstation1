@@ -382,10 +382,10 @@
 # very resistant to blunt but weak to slash and heat
 - type: damageModifierSet
   id: Plushie
+  coefficients:
     Blunt: 0.5
-    Slash: 1.5
+    Slash: 2.0
     Piercing: 0.75
-    Heat: 1
     Cold: 0.0
     Poison: 0.0
     Radiation: 0.0

@@ -7,6 +7,9 @@
   description: A sapient plush toy.
   abstract: true
   components:
+  - type: Body
+    prototype: Plushie
+    requiredLegs: 2
   - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
     sprite: Mobs/Species/Plushie/parts.rsi
     state: full
@@ -21,6 +24,7 @@
     hideLayersOnEquip:
     - Hair
     - Snout
+  - type: MobThresholds
     thresholds:
       0: Alive
       119.999: Critical
@@ -65,6 +69,16 @@
         - MobMask
         layer:
         - MobLayer
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.8
+      90: 0.6
+      120: 0.4
+  - type: PsionicInsulation
+  - type: StepTriggerImmune
+    whitelist:
+      types:
+      - Shard
 
 - type: entity
   parent: BaseSpeciesDummy
