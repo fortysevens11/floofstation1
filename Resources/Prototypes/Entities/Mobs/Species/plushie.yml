@@ -1,10 +1,9 @@
-# Anything human specific (e.g. UI, input) goes under MobHuman
 - type: entity
   parent:
   - MobFlammable
   - BaseMobSpecies
   id: BaseMobPlushie
-  name: Urist McFluff
+  name: Urist McPlush
   description: A sapient plush toy.
   abstract: true
   components:
@@ -46,6 +45,26 @@
       behaviors:
       - !type:GibBehavior { }
   - type: MobThresholds
+  - type: PseudoItem
+    storedOffset: 0,0
+    shape:
+    - 0, 0, 4, 4
+  - type: Flammable
+    fireStackIncreaseMultiplier: 2.00
+  - type: Sprite
+    scale: 0.5, 0.5
+  - type: Fixtures
+    fixtures: # TODO: This needs a second fixture just for mob collisions.
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.23
+        density: 70
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
 
 - type: entity
   parent: BaseSpeciesDummy
