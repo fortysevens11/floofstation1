@@ -1,0 +1,53 @@
+# Anything human specific (e.g. UI, input) goes under MobHuman
+- type: entity
+  parent:
+  - MobFlammable
+  - BaseMobSpecies
+  id: BaseMobPlushie
+  name: Urist McFluff
+  description: A sapient plush toy.
+  abstract: true
+  components:
+  - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
+    sprite: Mobs/Species/Plushie/parts.rsi
+    state: full
+  - type: Carriable # Carrying system from nyanotrasen.
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: MaterialCloth
+      amount: 5
+  - type: HumanoidAppearance
+    species: Plushie
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+    thresholds:
+      0: Alive
+      119.999: Critical
+      120: Dead
+  - type: LanguageKnowledge
+    speaks:
+    - SolCommon
+    understands:
+    - SolCommon
+    naturalLanguage: SolCommon # Floof: explicitly stated natural languages
+  - type: FootPrints
+  - type: ZombieImmune
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Plushie
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Slash
+        damage: 300
+      behaviors:
+      - !type:GibBehavior { }
+  - type: MobThresholds
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobPlushieDummy
+  categories: [ HideSpawnMenu ]

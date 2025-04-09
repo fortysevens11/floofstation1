@@ -1,0 +1,32 @@
+- type: entity
+  id: BasePlushieOrgan
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Mobs/Species/Plushie/organs.rsi
+  - type: Organ
+  # - type: Food
+  # - type: Extractable
+  #   grindableSolutionName: organ
+  #- type: SolutionContainerManager
+  #  solutions:
+  #    organ:
+  #      reagents:
+  #      - ReagentId: Oil
+  #        Quantity: 10
+
+- type: entity
+  id: OrganPlushieEyes
+  parent: BaseIPCOrgan
+  name: button eyes
+  description: "They get the job done. Somehow."
+  components:
+  - type: Sprite
+    layers:
+      - state: eyeball-l
+      - state: eyeball-r
+  - type: Organ
+    slotId: eyes
+  - type: Eyes

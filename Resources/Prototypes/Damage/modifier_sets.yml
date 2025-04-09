@@ -378,3 +378,19 @@
     Blunt: 0.9
     Slash: 0.9
     Piercing: 0.9
+
+# very resistant to blunt but weak to slash and heat
+- type: damageModifierSet
+  id: Plushie
+    Blunt: 0.5
+    Slash: 1.5
+    Piercing: 0.75
+    Heat: 2.0
+    Cold: 0.0
+    Poison: 0.0
+    Radiation: 0.0
+    Asphyxiation: 0.0
+    Bloodloss: 0.0
+    Cellular: 0.0
+  flatReductions:
+    Blunt: 3
