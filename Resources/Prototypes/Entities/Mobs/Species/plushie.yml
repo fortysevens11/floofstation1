@@ -31,10 +31,12 @@
       120: Dead
   - type: LanguageKnowledge
     speaks:
+    - TauCetiBasic
     - SolCommon
     understands:
+    - TauCetiBasic
     - SolCommon
-    naturalLanguage: SolCommon # Floof: explicitly stated natural languages
+    naturalLanguage: TauCetiBasic # Floof: explicitly stated natural languages
   - type: FootPrints
   - type: ZombieImmune
   - type: Damageable
@@ -48,7 +50,6 @@
         damage: 300
       behaviors:
       - !type:GibBehavior { }
-  - type: MobThresholds
   - type: PseudoItem
     storedOffset: 0,0
     shape:
