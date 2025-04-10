@@ -63,8 +63,8 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.28
-        density: 70
+          radius: 0.23
+        density: 35
         restitution: 0.0
         mask:
         - MobMask
@@ -80,7 +80,19 @@
     whitelist:
       types:
       - Shard
-
+  - type: PlayerToolModifier
+    pryTimeMultiplier: 0.6
+  - type: PlayerAccuracyModifier
+    spreadMultiplier: 15
+    maxSpreadAngle: 180
+  - type: BonusStaminaDamage
+    multiplier: 1.25
+  - type: BonusMeleeDamage
+    damageModifierSet:
+      coefficients:
+        Blunt: 0.2
+        Slash: 0.8
+        Piercing: 0.7
 - type: entity
   parent: BaseSpeciesDummy
   id: MobPlushieDummy

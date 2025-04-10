@@ -3,8 +3,8 @@
   name: species-name-human
   roundStart: true
   prototype: MobPlushie
-  sprites: MobHumanSprites
-  markingLimits: MobHumanMarkingLimits
+  sprites: MobPlushieSprites
+  markingLimits: MobPlushieMarkingLimits
   dollPrototype: MobPlushieDummy
   skinColoration: Hues
   customName: true
@@ -26,7 +26,7 @@
 # in either the mob's starting marking prototype,
 # or it has to be added in C#.
 - type: speciesBaseSprites
-  id: MobHumanSprites
+  id: MobPlushieSprites
   sprites:
     Head: MobHumanHead
     Hair: MobHumanoidAnyMarking
@@ -50,7 +50,7 @@
     HeadSide: MobHumanoidAnyMarking
 
 - type: markingPoints
-  id: MobHumanMarkingLimits
+  id: MobPlushieMarkingLimits
   points:
     Underwear:
       points: 1
