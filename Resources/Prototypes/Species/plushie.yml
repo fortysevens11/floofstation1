@@ -1,6 +1,6 @@
 - type: species
   id: Plushie
-  name: species-name-human
+  name: species-name-plushie
   roundStart: true
   prototype: MobPlushie
   sprites: MobPlushieSprites
@@ -9,7 +9,7 @@
   skinColoration: Hues
   customName: true
   minAge: 1
-  maxAge: 100
+  maxAge: 300
   oldAge: 50
   youngAge: 50
   minHeight: 0.3

@@ -96,6 +96,14 @@
   - type: OfferItem
   - type: LayingDown
   - type: StandingState
+  - type: HealthExaminable
+    examinableTypes:
+    - Blunt
+    - Slash
+    - Piercing
+    - Heat
+    - Shock
+    locPrefix: plushie
 
 - type: entity
   parent: BaseSpeciesDummy
