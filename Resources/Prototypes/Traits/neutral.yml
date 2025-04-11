@@ -108,6 +108,7 @@
       inverted: true
       species:
         - IPC
+        - Plushie
   functions:
     - !type:TraitAddMoodlets
       moodEffects:

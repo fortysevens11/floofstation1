@@ -17,6 +17,7 @@
       species:
         - Dwarf
         - IPC
+        - Plushie
   functions:
     - !type:TraitAddComponent
       components:

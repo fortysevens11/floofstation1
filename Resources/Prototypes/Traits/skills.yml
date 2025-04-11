@@ -57,6 +57,7 @@
       species:
         - Dwarf
         - IPC
+        - Plushie
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -83,6 +84,7 @@
       species:
         - Dwarf
         - IPC
+        - Plushie
   functions:
     - !type:TraitReplaceComponent
       components:
@@ -124,6 +126,7 @@
       species:
         - Vulpkanin
         - IPC
+        - Plushie
 
 - type: trait
   id: ParkourTraining
