@@ -93,6 +93,10 @@
         Blunt: 0.2
         Slash: 0.8
         Piercing: 0.7
+  - type: OfferItem
+  - type: LayingDown
+  - type: StandingState
+
 - type: entity
   parent: BaseSpeciesDummy
   id: MobPlushieDummy
