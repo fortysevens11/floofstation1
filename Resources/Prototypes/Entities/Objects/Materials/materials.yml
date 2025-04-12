@@ -83,6 +83,16 @@
   suffix: Full
   components:
   - type: Healing
+#    damageContainers:
+#    - Plushie
+#    damage:
+#      types:
+#        Slash: -10
+#        Blunt: -5
+#        Piercing: -20
+#        Heat: -5
+#        Cold: -5
+#        Caustic: -5
     damageContainers:
       - Biological
     damage:

@@ -63,3 +63,8 @@
   supportedTypes:
     - Poison
 
+- type: damageContainer
+  id: Plushie
+  supportedGroups:
+  - Brute
+  - Burn

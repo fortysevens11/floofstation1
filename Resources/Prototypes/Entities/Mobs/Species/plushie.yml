@@ -40,7 +40,9 @@
   - type: FootPrints
   - type: ZombieImmune
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainers:
+      - Inorganic
+      - Plushie
     damageModifierSet: Plushie
   - type: Destructible
     thresholds:
@@ -59,7 +61,7 @@
   - type: Sprite
     scale: 0.6, 0.6
   - type: Fixtures
-    fixtures: # TODO: This needs a second fixture just for mob collisions.
+    fixtures:
       fix1:
         shape:
           !type:PhysShapeCircle
@@ -94,6 +96,8 @@
   - type: LayingDown
   - type: StandingState
   - type: Deathgasp
+    prototype: DefaultDeathgasp
+    needsCritical: false
   - type: HealthExaminable
     examinableTypes:
     - Blunt
@@ -102,6 +106,10 @@
     - Heat
     - Shock
     locPrefix: plushie
+  - type: Flashable
+  - type: Shoving
+  - type: Fiber
+    fiberMaterial: fibers-magic
 
 - type: entity
   parent: BaseSpeciesDummy
