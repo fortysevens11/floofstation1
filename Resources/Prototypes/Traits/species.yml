@@ -30,7 +30,7 @@
     - !type:TraitReplaceComponent
       components:
       - type: BonusMeleeDamage # Floof - oni refector
-        damageModifierSet: 
+        damageModifierSet:
           coefficients:
             Blunt: 1.2
             Slash: 1.2
@@ -54,7 +54,7 @@
     - !type:TraitReplaceComponent
       components:
       - type: BonusMeleeDamage # Floof - Oni refactor
-        damageModifierSet: 
+        damageModifierSet:
           coefficients:
             Blunt: 1.25
             Slash: 1.25
@@ -83,3 +83,36 @@
     - !type:CharacterSpeciesRequirement
       species:
         - Shadowkin
+
+- type: trait
+  id: PlushieFirearmsTraining
+  category: Physical
+  points: -1
+  functions:
+    - !type:TraitRemoveComponent
+      components:
+        - type: PlayerAccuracyModifier
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Plushie
+
+- type: trait
+  id: SlashResistant
+  category: Physical
+  points: -3
+  functions:
+    - !type:TraitReplaceComponent
+      components:
+        - type: damageModifierSet
+          id: PlushieSlashResistant
+    - !type:TraitPushDescription
+      descriptionExtensions:
+      - description: examine-slash-resistant-message
+        fontSize: 12
+        requireDetailRange: true
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Plushie
+

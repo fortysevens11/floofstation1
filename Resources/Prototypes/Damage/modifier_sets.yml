@@ -393,4 +393,20 @@
     Bloodloss: 0.0
     Cellular: 0.0
   flatReductions:
-    Blunt: 3
+    Blunt: 5
+
+# a little better against slash and blunt
+- type: damageModifierSet
+  id: PlushieSlashResistant
+  coefficients:
+    Blunt: 0.5
+    Slash: 1.25
+    Piercing: 0.75
+    Cold: 0.0
+    Poison: 0.0
+    Radiation: 0.0
+    Asphyxiation: 0.0
+    Bloodloss: 0.0
+    Cellular: 0.0
+  flatReductions:
+    Blunt: 7

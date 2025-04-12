@@ -481,3 +481,11 @@ trait-name-BrittleBoneDisease = Osteogenesis Imperfecta
 trait-description-BrittleBoneDisease =
     Also known as "brittle bone disease", people with this genetic disorder have bones that are easily broken,
     often simply by moving. This trait reduces your threshold for critical injury by 50 points.
+
+trait-name-SlashResistant = Slash-Resistant Fabric
+trait-description-SlashResistant =
+    Your fabric skin is woven from slash-resistant fabric, increasing your durability.
+
+trait-name-PlushieFirearmsTraining = Plushie Firearms Training
+trait-description-PlushieFirearmsTraining =
+    Through specialized training, you've learned to overcome your soft plush fingers' clumsiness and use firearms accurately.

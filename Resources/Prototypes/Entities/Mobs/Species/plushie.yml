@@ -53,7 +53,7 @@
   - type: PseudoItem
     storedOffset: 0,0
     shape:
-    - 0, 0, 4, 4
+    - 0, 0, 3, 3
   - type: Flammable
     fireStackIncreaseMultiplier: 2.00
   - type: Sprite
@@ -84,8 +84,6 @@
   - type: PlayerAccuracyModifier
     spreadMultiplier: 15
     maxSpreadAngle: 180
-  - type: BonusStaminaDamage
-    multiplier: 1.25
   - type: BonusMeleeDamage
     damageModifierSet:
       coefficients:
@@ -95,6 +93,7 @@
   - type: OfferItem
   - type: LayingDown
   - type: StandingState
+  - type: Deathgasp
   - type: HealthExaminable
     examinableTypes:
     - Blunt
@@ -103,10 +102,12 @@
     - Heat
     - Shock
     locPrefix: plushie
-  - type: Deathgasp
-  - type: Clumsy
 
 - type: entity
   parent: BaseSpeciesDummy
   id: MobPlushieDummy
   categories: [ HideSpawnMenu ]
+  description: A dummy plushie meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Plushie

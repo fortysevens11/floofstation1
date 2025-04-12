@@ -113,12 +113,12 @@
     sprite: Mobs/Customization/eyes.rsi
     state: eyes
 
-- type: humanoidBaseSprite
-  id: MobHumanoidAnyMarking
-
-- type: humanoidBaseSprite
-  id: MobHumanoidMarkingMatchSkin
-  markingsMatchSkin: true
+#- type: humanoidBaseSprite
+#  id: MobHumanoidAnyMarking
+#
+#- type: humanoidBaseSprite
+#  id: MobHumanoidMarkingMatchSkin
+#  markingsMatchSkin: true
 
 - type: humanoidBaseSprite
   id: MobPlushieHead
