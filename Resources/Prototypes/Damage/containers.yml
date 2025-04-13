@@ -66,5 +66,5 @@
 - type: damageContainer
   id: Plushie
   supportedGroups:
-  - Brute
-  - Burn
+    - Brute
+    - Burn

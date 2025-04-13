@@ -40,9 +40,7 @@
   - type: FootPrints
   - type: ZombieImmune
   - type: Damageable
-    damageContainers:
-      - Inorganic
-      - Plushie
+    damageContainer: Plushie
     damageModifierSet: Plushie
   - type: Destructible
     thresholds:
@@ -82,16 +80,16 @@
       types:
       - Shard
   - type: PlayerToolModifier
-    pryTimeMultiplier: 0.6
+    pryTimeMultiplier: 3
   - type: PlayerAccuracyModifier
-    spreadMultiplier: 15
+    spreadMultiplier: 2.5
     maxSpreadAngle: 180
   - type: BonusMeleeDamage
     damageModifierSet:
       coefficients:
         Blunt: 0.2
         Slash: 0.8
-        Piercing: 0.7
+        Piercing: 0.5
   - type: OfferItem
   - type: LayingDown
   - type: StandingState
@@ -100,12 +98,12 @@
     needsCritical: false
   - type: HealthExaminable
     examinableTypes:
-    - Blunt
-    - Slash
-    - Piercing
-    - Heat
-    - Shock
-    locPrefix: plushie
+      - Blunt
+      - Slash
+      - Piercing
+      - Heat
+      - Shock
+    locPrefix: silicon
   - type: Flashable
   - type: Shoving
   - type: Fiber

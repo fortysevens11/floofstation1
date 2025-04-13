@@ -92,7 +92,6 @@
 #        Piercing: -20
 #        Heat: -5
 #        Cold: -5
-#        Caustic: -5
     damageContainers:
       - Biological
     damage:
@@ -170,6 +169,21 @@
   name: durathread
   suffix: Full
   components:
+  - type: Healing
+    damageContainers:
+      - Plushie
+    damage:
+      types:
+        Slash: -15
+        Blunt: -10
+        Piercing: -25
+        Heat: -20
+        Cold: -20
+        Caustic: -10
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
     stackType: Durathread
     baseLayer: base
@@ -552,6 +566,20 @@
   description: A webby material.
   suffix: Full
   components:
+  - type: Healing
+    damageContainers:
+    - Plushie
+    damage:
+      types:
+        Slash: -8
+        Blunt: -5
+        Piercing: -10
+        Heat: -5
+        Cold: -5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: PhysicalComposition
     materialComposition:
       WebSilk: 100
